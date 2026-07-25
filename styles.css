@@ -483,6 +483,187 @@ footer {
   margin-top: 4rem;
 }
 
+/* Resume Button */
+.btn-resume {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.2);
+}
+.btn-resume:hover {
+  background: var(--primary-color);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 230, 118, 0.4);
+}
+
+/* Muted Button (Coming Soon / Private) */
+.btn-muted {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-secondary);
+  border: 1px dashed rgba(255,255,255,0.2);
+  cursor: default;
+  font-size: 0.9rem;
+}
+
+/* Education Section */
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.education-card:hover {
+  border-color: rgba(0, 230, 118, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(0, 230, 118, 0.2);
+}
+.edu-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+.edu-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+.edu-content h4 {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.edu-meta {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+.edu-badge {
+  background: rgba(0, 230, 118, 0.1);
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  color: var(--primary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.edu-courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Value Cards (Why Hire Me rewrite) */
+.value-grid {
+  margin-top: 1rem;
+}
+.value-card strong {
+  color: var(--primary-color);
+}
+
+/* Certifications */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.cert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 230, 118, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(0, 230, 118, 0.2);
+}
+.cert-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+.cert-content h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+.cert-issuer {
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+.cert-link {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cert-link:hover {
+  color: var(--primary-color);
+}
+
+/* Coding Profiles */
+.cp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cp-card {
+  background: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 160px;
+}
+.cp-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 230, 118, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(0, 230, 118, 0.3);
+}
+.cp-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.cp-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.cp-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Contact links */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+/* Text center utility */
+.text-center { text-align: center; }
+
+
 /* Animations */
 .reveal {
   opacity: 0;
